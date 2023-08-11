@@ -50,6 +50,28 @@ export const Login = () => {
       <div className="mt-20 md:mt-5 shadow-lg px-5 py-10 rounded-xl bg-white">
         {msg && <Alerta alerta={alerta} />}
         <form onSubmit={handleSubmit}>
+        <div className="my-5 text-center flex flex-col justify-center items-center gap-y-4">
+            <p
+              htmlFor=""
+              className="uppercase text-gray-600 block text-md font-bold"
+            >
+              Prueba el Proyecto con las siguientes credenciales:
+            </p>
+            <div className="mt-2 shadow-md px-2 py-2 rounded-lg bg-white w-1/2 ">
+            <p
+              htmlFor=""
+              className="uppercase text-gray-600 block text-sm font-bold"
+            >
+             Correo: <span className="text-gray-500 font-normal text-md normal-case">test@test.com</span>
+            </p>
+            <p
+              htmlFor=""
+              className="uppercase text-gray-600 block text-sm font-bold"
+            >
+             Contraseña: <span className="text-gray-500 font-normal text-md normal-case">testing</span>
+            </p>
+            </div>
+          </div>
           <div className="my-5">
             <label
               htmlFor=""
