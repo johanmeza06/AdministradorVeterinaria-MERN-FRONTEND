@@ -33,7 +33,7 @@ export const PacientesProvider = ({ children }) => {
       }
     };
     obtenerPacientes();
-  }, [auth]);
+  }, [pacientes]);
 
   const guardarPaciente = async (paciente) => {
     const token = localStorage.getItem("token");
@@ -68,7 +68,6 @@ export const PacientesProvider = ({ children }) => {
           config
         );
         const { createdAt, updatedAt, __v, ...pacienteAlmacenado } = data;
-
         setPacientes([pacienteAlmacenado, ...pacientes]);
       } catch (error) {
         console.log(error.response.data.msg);
