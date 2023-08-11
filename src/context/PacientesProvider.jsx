@@ -33,7 +33,7 @@ export const PacientesProvider = ({ children }) => {
       }
     };
     obtenerPacientes();
-  }, [pacientes]);
+  }, [pacientes,auth]);
 
   const guardarPaciente = async (paciente) => {
     const token = localStorage.getItem("token");
